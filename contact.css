@@ -1,0 +1,60 @@
+body{
+	font-family: Montserrat;
+	padding-top: 100px;
+}
+
+.navbar{
+	background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a{
+	font-size: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #303030;
+}
+
+#aktiven{
+	color: #b52025;
+
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	color: #303030;
+}
+
+textarea.form-control{
+	margin-top: 25px;
+}
+
+#logoBesedilo{
+	width: 120px;
+	margin: 20px;
+}
+
+input[type="submit"]
+{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #b52025;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 20px 0;
+}
+
+textarea {
+	resize: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+  	-moz-border-right-colors: none;
+  	-moz-border-top-colors: none;
+
+}
+
+textarea:focus{
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}

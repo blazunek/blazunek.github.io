@@ -1,0 +1,32 @@
+body{
+	font-family: Montserrat;
+	padding-top: 70px;
+
+}
+
+.navbar{
+	background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a{
+	font-size: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #303030;
+}
+
+#aktiven{
+	color: #b52025;
+
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	color: #303030;
+}
+
+#logoBesedilo{
+	width: 120px;
+	margin: 20px;
+}
+
+
