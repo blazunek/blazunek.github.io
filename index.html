@@ -1,41 +1,392 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Welcome!</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Global family</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="icon" href="http://www.shanghaisummerschool.org/favicon.png" sizes="32x32" type="image/png" />
 </head>
 <body>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-	<div class="navbar-headher">
-		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-       		<span class="sr-only">Toggle navigation</span>
-       		<span class="icon-bar"></span>
-       		<span class="icon-bar"></span>
-       		<span class="icon-bar"></span>
-   		</button>
-		<a href="login.html" class="navbar-left"> <img src="http://sss.reframe.si/wp-content/uploads/2017/08/SSS-LOGO-header.jpg" id="logoBesedilo"></a>
-	</div>
-	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-		<div class="nav navbar-nav">
-			
-		</div>
-		<div class="nav navbar-nav navbar-right"> 
-			<li><a href="personal.html" >Personal info</a></li>		  
-			<li><a href="#" class="btn disabled">Payment</a></li>
-			<li ><a href="#" id="aktiven">Travel</a></li>
-			<li><a href="#" class="btn disabled">Chat</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="#" class="rdece"> </i></a></li>		  
-		  
-		</div>
-	</div>
-</nav>
+
+
+
+<div id="scroll">
+  <nav class="navbar navbar-default navbar-fixed-top" id="menu">
+    <div class="navbar-headher">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#premika">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-left"><img src="https://www.shanghaisummerschool.org/wp-content/uploads/2020/07/Final-Files-01-4-2.png" class="navbar_pic" id="logoBesedilo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="premika">
+      <ul class="nav navbar-nav navbar-right"> 
+        <li><a href="CityOfDreams.html">City of dreams</a></li>     
+        <li><a href="#">How it works</a></li>
+        <li><a href="globalFamily.html">Global family</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="ourStory.html">Our Story</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="http://www.shanghaisummerschool.org/sss-signup/" class="prijava"><button type="button" class="w3-button w3-round-xxlarge" id="prijava">APPLY</button></a></li>     
+      </ul>
+    </div>
+    </nav>
+</div>
+
+
+<script type="text/javascript">
+(function($) {$('#menu').fadeOut(0);           
+    $(document).ready(function(){  
+
+        $(window).scroll(function(){ 
+
+            if ($(this).scrollTop() > 100) {
+                $('#menu').fadeIn(200);
+            } else {
+                $('#menu').fadeOut(200);
+            }
+        });
+    });
+})(jQuery);
+</script>
+
+<div class="headher">
+    <nav class="navbar navbar-default fixed-top" id="menu">
+      <div class="navbar-headher">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#staticno">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-left"><img src="logoWhite.png" id="logoBesediloWhite"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="staticno">
+        <ul class="nav navbar-nav navbar-right"> 
+          <li><a href="CityOfDreams.html"><b>City of dreams</b></a></li>      
+          <li><a href="#"><b>How it works</b></a></li>
+          <li><a href="globalFamily.html"><b>Global family</b></a></li>
+          <li><a href="faq.html" ><b>FAQ</b></a></li>
+          <li><a href="ourStory.html"><b>Our Story</b></a></li>
+          <li><a href="#"><b>Blog</b></a></li>
+          <li><a href="http://www.shanghaisummerschool.org/sss-signup/" class="prijava"><button type="button" class="w3-button w3-round-xxlarge" id="prijava">APPLY</button></a></li>     
+        </ul>
+      </div>
+    </nav>
+    <div id="carousel-example-generic" class=" myCarousel carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+
+  <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="slide3.jpg" alt="...">
+            <div class="carousel-caption">
+        ...
+            </div>
+          </div>
+          <div class="item">
+            <img src="slide2.jpg" alt="...">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+          <div class="item">
+            <img src="slide4.jpg" alt="...">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+          <div class="item">
+            <img src="slide1.jpg" alt="...">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+    ...
+      </div>
+
+  <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+
+<div class="vsebina">
+  <div class="partner">
+      <h2><b>Official partner</b></h2>
+      <img src="donghuaUni.jpg">
+  </div>
+
+<div class="prviDel">
+  <div class="moto">
+    <h5>“We go to school to gather knowledge, we live to be human”</h5>
+    <h5>Does the idea of a school that isn’t confined to the four walls of a classroom appeal to you?</h5>
+    <h5>Does the word “travel” makes you want to buy flight tickets and leave right away?</h5>
+    <h4><b>Then Shanghai Summer School is perfect for you!</b></h4>
+  </div>
+</div>
+
+<div class="moznosti">
+  <div class="container">
+    <div class="col-xs-12 col-sm-4">
+      <div class="sssStiri">
+        <img src="4weeks.jpg">
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="sssDve">
+        <img src="2weeks.jpg">
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="hkss">
+        <img src="2weeksHK.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="aboutSS middle">
+  <div class="container">
+    <h2><b>About Shanghai Summer School</b></h2>
+    <p>Like American entrepreneur, author and motivational speaker Jim Rohn once said, “You are the average of the five people you most associate with.”</p>
+    <p>So join us at Shanghai Summer School this summer, and surround yourself with new friends who will motivate you to keep growing and succeeding.</p>
+    <p>Engaging Chinese Language classes, informative business lectures and field trips, and a myriad of cultural activities. All of these take place in the throbbing metropolis that is Shanghai.</p>
+    <button type="button" class="w3-button w3-round-xxlarge" id="howItWorks">How it works</button>
+  </div>
+</div>
+
+<div class="redStripe"></div>
+
+<div class="weSeeIt middle">
+  <div class="container">
+    <h2><b>How we see it</b></h2>
+    <p>Life is one big journey. Friends we make and memories that we create make up a large part of that journey, and are what makes the journey interesting and worthwhile.</p>
+    <p>We see Shanghai Summer school as more than just a month-long summer activity, but as an experience that connects people from all over the world on a different level to create memories that will last a lifetime. Come and be a part of our <b>Global Family</b>.</p>
+    <button type="button" class="w3-button w3-round-xxlarge" id="howItWorks">Global family</button>
+  </div>
+</div>
+
+<div class="redStripe"></div>
+  
+<div class="othersSee middle">
+  <div class="container">
+    <h2><b>How others see it</b></h2>
+    <div class="col-xs-0 col-md-1 col-lg-2">
+      <p> </p>
+    </div>
+    <div class="col-xs-12 col-md-10 col-lg-8">
+      <div class="col-xs-12 col-sm-4">
+        <div class="opis">
+          <img src="barbi.png">
+          <h3><b>Barbara, 25</b></h3>
+          <p>“Sometimes all you have to do is go for it. Take a deep breath and jump. Because here’s the thing, you can spend forever standing at   the   foot of the diving board, and you will always find a reason not to go in.” One of those “Just go for it!” moments that changed my   life for  the better was choosing to go to Shanghai a year and a half ago with Shanghai Summer School! Just go for it! It will […]</p>
+         </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="opis">
+          <img src="alex.png">
+          <h3><b>Alex, 22</b></h3>
+          <p>“Shanghai Summer School can be summed up in one word – adventure. You’re like Indiana Jones on a treasure hunt. The treasure you find  could be that new tasty dish in a corner restaurant that you discover by accident when you walk through the wrong door. This treasure  could be the new people you meet at crazy parties or on the way there. In particular, for me, this treasure was made up of all the   unforgettable memories of this journey.”</p>
+        </div>
+      </div>
+  
+      <div class="col-xs-12 col-sm-4">
+        <div class="opis">
+          <img src="iris.png">
+          <h3><b>Iris, 21</b></h3>
+          <p>“Why should you join Shanghai Summer School? Well, you get to learn Chinese, the most spoken language in the world. You get to feel  like a celebrity because people ask to take photos with you all the time. You can take a siesta in the middle of the day in the most   crowded restaurants and no one cares because everyone does that. You get to eat so many Chinese dumplings that you almost get sick of   them. Then you discover […]</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12">
+      <button type="button" class="w3-button w3-round-xxlarge" id="BlogButton">Blog</button>
+    </div>
+  </div>
+</div>
+
+<div class="redStripe"></div>
+
+<div id="ytVideo">
+  <button type="button" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/8mAgLi_tosQ" data-target="#myModal" id="ytGumb">
+      <img src="http://www.shanghaisummerschool.org/wp-content/uploads/2017/10/h5-custom-video-play-button.png" class="attachment-full size-full" alt="">
+  </button>
+</div>  
+ <!-- Button trigger modal -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-body">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>        
+        <!-- 16:9 aspect ratio -->
+      <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always">></iframe>
+      </div>       
+        </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+var $videoSrc;  
+$('.video-btn').click(function() {
+    $videoSrc = $(this).data( "src" );
+});
+console.log($videoSrc); 
+$('#myModal').on('shown.bs.modal', function (e) {
+$("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" ); 
+})
+$('#myModal').on('hide.bs.modal', function (e) {
+    $("#video").attr('src',$videoSrc); 
+})});
+</script>
+
+ <!-- END Button trigger modal -->
+
+
+<div class="koncnoBesedilo">
+  <div class="container">
+    <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3">
+      <p> </p>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+      <p>Shanghai is one of the world’s biggest cities and a global financial center where East meets West.</p>
+      <p>Join our 4-week long experience and surround yourself with like-minded ambitious individuals from all over the world, who want more to their summer than to lie for hours on the beach.</p>
+      <p><b>Make your summer count!</b></p>
+      <p id="welcomeToOur"><b>Welcome to our global family!</b></p>
+      <button type="button" class="w3-button w3-round-xxlarge" id="prijavaSpodaj">APPLY</button>
+      <hr>
+      <p>Don't know yet, want to know more or to keep updated?</p>
+      <p><b>Leave us your email address!</b></p>
+    </div>
+      
+  </div>
+</div>
+
+<div class="vloga">
+  <div class="container">
+    <div class="col-xs-0 col-lg-0">
+      <p> </p>
+    </div>
+    <form class="form-inline">
+      <div class="form-group">
+        <div class="col-xs-12 col-md-3 col-lg-2">
+          <label class="sr-only" for="exampleInputEmail3">First name</label>
+          <input type="email" class="form-control" id="fName" placeholder="First name">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-12 col-md-3 col-lg-2">
+          <label class="sr-only" for="exampleInputPassword3">Last name</label>
+          <input type="password" class="form-control" id="lName" placeholder="Last name">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-12 col-md-3 col-lg-2">
+          <label class="sr-only" for="exampleInputPassword3">Email</label>
+          <input type="password" class="form-control" id="email" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-12 col-md-3 col-lg-2">
+          <button type="submit" class="btn btn-default">Sign in</button>
+        </div>
+      </div>
+              
+    </form>
+    <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3">
+      <p> </p>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="galerija">
+  <div class="row">
+    <div class="slikaGalerije col-xs-6 col-md-3">
+      <a href="https://www.instagram.com/p/Blsrwu5Fd7B/?taken-by=shanghai.summer.school"><img src="galerija/index1.jpg"></a>
+    </div>
+    <div class="slikaGalerije col-xs-6 col-md-3">
+      <a href="https://www.instagram.com/p/Blc424CFiku/?taken-by=shanghai.summer.school"><img src="galerija/index2.jpg"></a>
+    </div>
+    <div class="slikaGalerije col-xs-6 col-md-3">
+      <a href="https://www.instagram.com/p/BjSfS6Cl1dU/?taken-by=shanghai.summer.school"><img src="galerija/index3.jpg"></a>
+    </div>
+    <div class="slikaGalerije col-xs-6 col-md-3">
+      <a href="https://www.instagram.com/p/Bi_0kJeFstv/?taken-by=shanghai.summer.school"><img src="galerija/index4.jpg"></a>
+    </div>
+  </div>
+</div>
+
+<div class="zakljucek">
+  <div class="row">
+    <div class="col-xs-12 col-sm-3">
+      <div id="logo">
+        <a href="http://english.dhu.edu.cn/mainm.htm"><img src="logoDonghua.png" id="logoSpodajDonghua"></a>
+        <img src="logoWhite.png" id="logoSpodajSss">
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 besedilo">
+      <div id="besediloSpodaj">
+        
+        <p>
+          <a href="CityOfDreams.html">Shanghai 上海 – City of Dreams</a>
+          |
+          <a href="#"> How it works </a>
+          |
+          <a href="globalFamily.html"> Global Family </a>
+          |
+          <a href="faq.html"> FAQ </a>
+          |
+          <a href="ourStory.html"> Our story </a>
+          |
+          <a href="http://www.shanghaisummerschool.org/blog/"> Blog </a>
+          |
+          <a href="http://www.shanghaisummerschool.org/sss-signup/"> Apply </a>
+          |
+          <a href="http://www.shanghaisummerschool.org/terms-and-conditions"> Terms and conditions </a>   
+        </p>
+        <h3 id="certifikat"><b>© 2017. Shanghai Summer School, All rights reserved</b></h3>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <a href="https://www.facebook.com/ShgSummerSchool/"><i class="fab fa-facebook-square ikona"></i></a>
+      <a href="https://www.instagram.com/shanghai.summer.school/"><i class="fab fa-instagram ikona"></i></a>
+      <a href="https://www.linkedin.com/company/shanghaisummerschool/"><i class="fab fa-linkedin ikona"></i></a>
+    </div>
+  </div>
+</div>
+
+
 
 </body>
 </html>
